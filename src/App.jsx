@@ -1,5 +1,11 @@
+
 import { Route, Routes, Link, Navigate } from "react-router-dom";
 import { Features, Home, Pricing, Stories } from "./pages";
+
+
+
+
+
 
 function App() {
   return (

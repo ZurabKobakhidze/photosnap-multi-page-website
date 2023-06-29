@@ -7,7 +7,9 @@ import React, { useState, useEffect } from "react";
 function Home() {
   return <div>
     <Header />
-    <div id="home_div"></div>
+    <div id="home_div">
+  
+    </div>
     <Footer />
   </div>;
 }

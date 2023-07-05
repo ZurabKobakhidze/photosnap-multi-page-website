@@ -1,5 +1,5 @@
 import { BeautifulStories, CreateStories, DesignedFor } from "components/Home";
-import { Footer, Header } from "components/shared";
+import { Footer, Header, StoryComponents, ToolsComponents } from "components/shared";
 import React, { useState, useEffect } from "react";
 
 function Home() {
@@ -10,6 +10,12 @@ function Home() {
         <CreateStories />
         <BeautifulStories />
         <DesignedFor />
+      </div>
+      <div>
+        < StoryComponents />
+      </div>
+      <div>
+        < ToolsComponents />
       </div>
       <Footer />
     </div>

@@ -12,7 +12,7 @@ function Home() {
         <DesignedFor />
       </div>
       <div>
-        < StoryComponents />
+        < StoryComponents storyIDs={[1, 2, 3, 4]} hideDate />
       </div>
       <div>
         < ToolsComponents />

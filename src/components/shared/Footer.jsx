@@ -27,7 +27,7 @@ function Footer() {
         <TextH3>Features</TextH3>
         <TextH3>Pricing</TextH3>
       </TextDiv>
-      < GetButton />
+      <GetButton />
       <CopyrightText>Copyright 2019. All Rights Reserved</CopyrightText>
     </FooterContainer>
   );
@@ -70,7 +70,6 @@ const TextDiv = styled.div`
   padding-bottom: 119px;
 `;
 
-
 const CopyrightText = styled.h3`
   color: #fff;
   text-align: center;
@@ -82,5 +81,3 @@ const CopyrightText = styled.h3`
   opacity: 0.5;
   margin-top: 34px;
 `;
-
-

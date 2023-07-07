@@ -7,6 +7,7 @@ import {
   DragDrop,
 } from "assets/index";
 import React, { useState, useEffect } from "react";
+import styled from "styled-components";
 
 function ToolsComponents({ toolIDs }) {
   const [tools, setTools] = useState([
@@ -50,17 +51,47 @@ function ToolsComponents({ toolIDs }) {
 
   return (
     <>
-      {tools.filter(tool => toolIDs.includes(tool.id)).map((tool) => (
-        <div key={tool.id}>
-          <img src={tool.icon} alt="" />
-          <h2>{tool.title}</h2>
-          <p>
-            {tool.text}
-          </p>
-        </div>
-      ))}
+      {tools
+        .filter((tool) => toolIDs.includes(tool.id))
+        .map((tool) => (
+          <DivBox key={tool.id}>
+            <img src={tool.icon} alt="" />
+            <H2Text>{tool.title}</H2Text>
+            <PText>{tool.text}</PText>
+          </DivBox>
+        ))}
     </>
   );
 }
 
 export default ToolsComponents;
+
+const DivBox = styled.div`
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 56px;
+`;
+
+const H2Text = styled.h2`
+  color: #000;
+  text-align: center;
+  font-family: DM Sans;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 25px;
+  margin-top: 48px;
+`;
+
+const PText = styled.p`
+  color: #000;
+  text-align: center;
+  font-family: DM Sans;
+  font-size: 15px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 25px;
+  margin-top: 16px;
+  opacity: 0.6;
+`;

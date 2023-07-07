@@ -22,6 +22,14 @@ export { default as Somwarpet } from "./stories/mobile/somwarpet.jpg";
 export { default as TripToNowhere } from "./stories/mobile/trip-to-nowhere.jpg";
 export { default as UnforeseenCorners } from "./stories/mobile/unforeseen-corners.jpg";
 export { default as WorldTour } from "./stories/mobile/world-tour.jpg";
+export { default as BoostExposure } from "./shared/desktop/boost-exposure.svg";
+export { default as CustomDomain } from "./shared/desktop/custom-domain.svg";
+export { default as Embed } from "./shared/desktop/embed.svg";
+export { default as NoLimit } from "./shared/desktop/no-limit.svg";
+export { default as DragDrop } from "./shared/desktop/drag-drop.svg";
+
+
+
 
 
 

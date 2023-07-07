@@ -15,7 +15,7 @@ function Home() {
         < StoryComponents storyIDs={[1, 2, 3, 4]} hideDate />
       </div>
       <div>
-        < ToolsComponents />
+        < ToolsComponents toolIDs={[1, 2, 3]} />
       </div>
       <Footer />
     </div>

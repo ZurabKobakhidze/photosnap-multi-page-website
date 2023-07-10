@@ -8,7 +8,6 @@ function Stories() {
  <div>
   < MoonHazi />
   <StoryComponents storyIDs={Array.from({length: 16}, (_, i) => i + 1)} />
-
  </div>
  < Footer />
   </div>;

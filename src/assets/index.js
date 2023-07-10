@@ -27,8 +27,9 @@ export { default as CustomDomain } from "./shared/desktop/custom-domain.svg";
 export { default as Embed } from "./shared/desktop/embed.svg";
 export { default as NoLimit } from "./shared/desktop/no-limit.svg";
 export { default as DragDrop } from "./shared/desktop/drag-drop.svg";
-export { default as Close} from "./shared/desktop/close.svg"
-
+export { default as Close} from "./shared/desktop/close.svg";
+export { default as HeroMobile} from "./features/mobile/hero.jpg";
+export { default as BetaMobile} from "./shared/mobile/bg-beta.jpg"
 
 
 

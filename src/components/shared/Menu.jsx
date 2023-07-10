@@ -22,7 +22,7 @@ const MenuDiv = styled.div`
   align-items: center;
   position: absolute;
   background: white;
-  z-index: 2;
+  z-index: 3;
   width: 100%;
   padding-bottom: 32px;
   padding-top: 32px;

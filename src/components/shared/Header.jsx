@@ -27,7 +27,7 @@ export default Header;
 
 const HeaderContainer = styled.div`
   position: relative;
-  z-index: 1;
+  z-index: 2;
 `;
 
 const Main = styled.div`
@@ -41,7 +41,7 @@ const Main = styled.div`
   box-sizing: border-box;
   position: relative;
   background: white;
-  z-index: 2;
+  z-index: 3;
 `;
 
 const Overlay = styled.div`
@@ -51,5 +51,5 @@ const Overlay = styled.div`
   right: 0;
   bottom: 0;
   background: rgba(0, 0, 0, 0.5);
-  z-index: 1;
+  z-index: 2;
 `;

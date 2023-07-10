@@ -21,6 +21,8 @@ const InviteDiv = styled.div`
   display: flex;
   flex-direction: row;
   gap: 22px;
+  position: relative;
+  z-index: 1;
 `;
 
 const GetinviteH3 = styled.h3`

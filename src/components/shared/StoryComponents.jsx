@@ -20,6 +20,8 @@ import React, { useState, useEffect } from "react";
 import { GetButton } from ".";
 import styled from "styled-components";
 
+
+
 function StoryComponents({ storyIDs, hideDate }) {
   const [stories, setStories] = useState([
     {
@@ -142,10 +144,10 @@ function StoryComponents({ storyIDs, hideDate }) {
         .filter((story) => storyIDs.includes(story.id))
         .map((story) => (
           <StoryContainer key={story.id} bgImage={story.bgImage}>
-            {!hideDate && <p>{story.date}</p>}
+            {!hideDate && <DateH3>{story.date}</DateH3>}
             <H1text>{story.title}</H1text>
             <H2text>{story.author}</H2text>
-            <DivBox ></DivBox >
+            <DivBox></DivBox>
             <GetButton />
           </StoryContainer>
         ))}
@@ -156,9 +158,7 @@ function StoryComponents({ storyIDs, hideDate }) {
 export default StoryComponents;
 
 const StoryContainer = styled.div`
-  background: no-repeat;
-  background-image: url(${(props) => props.bgImage});
-  background-size: cover;
+  position: relative;
   display: flex;
   flex-direction: column;
   padding-left: 33px;
@@ -166,7 +166,24 @@ const StoryContainer = styled.div`
   height: 375px;
   padding-right: 33px;
   padding-bottom: 40px;
+  background: no-repeat;
+  background-image: url(${(props) => props.bgImage});
+  background-size: cover;
 
+  &:before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(
+      180deg,
+      rgba(0, 0, 0, 0) 0%,
+      rgba(0, 0, 0, 0.66) 100%
+    );
+    z-index: 0;
+  }
 `;
 
 const H1text = styled.h1`
@@ -176,7 +193,7 @@ const H1text = styled.h1`
   font-style: normal;
   font-weight: 700;
   line-height: 25px;
-  margin-top: 236px;
+  z-index: 1;
 `;
 
 const H2text = styled.h2`
@@ -186,6 +203,7 @@ const H2text = styled.h2`
   font-style: normal;
   font-weight: 400;
   line-height: normal;
+  z-index: 1;
 `;
 
 const DivBox = styled.div`
@@ -195,4 +213,16 @@ const DivBox = styled.div`
   height: 1px;
   margin-top: 16px;
   margin-bottom: 20px;
+  z-index: 1;
+`;
+
+const DateH3 = styled.h3`
+  color: #fff;
+  font-family: DM Sans;
+  font-size: 13px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  margin-top: 215px;
+  z-index: 1;
 `;

@@ -161,11 +161,13 @@ const StoryContainer = styled.div`
   position: relative;
   display: flex;
   flex-direction: column;
+  justify-content: flex-end;
   padding-left: 33px;
   width: 100%;
   height: 375px;
   padding-right: 33px;
   padding-bottom: 40px;
+  padding-top: 215px;
   background: no-repeat;
   background-image: url(${(props) => props.bgImage});
   background-size: cover;
@@ -223,6 +225,6 @@ const DateH3 = styled.h3`
   font-style: normal;
   font-weight: 400;
   line-height: normal;
-  margin-top: 215px;
+  
   z-index: 1;
 `;

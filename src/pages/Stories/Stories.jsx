@@ -7,7 +7,8 @@ function Stories() {
  <Header/>
  <div>
   < MoonHazi />
-  < StoryComponents storyIDs={[1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16]}  />
+  <StoryComponents storyIDs={Array.from({length: 16}, (_, i) => i + 1)} />
+
  </div>
  < Footer />
   </div>;

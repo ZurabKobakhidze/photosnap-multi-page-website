@@ -14,7 +14,6 @@ function Features() {
         <ToolsComponents toolIDs={[1, 2, 3, 4, 5]} />
       </DivTools>
       <Beta />
-
       <Footer />
     </div>
   );

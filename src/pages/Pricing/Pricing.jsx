@@ -18,16 +18,36 @@ function Pricing() {
             <span className="slider round"></span>
           </label>
           <h3>Yearly</h3>
-
         </SwitchDiv>
         <BasicDiv>
           <h2>Basic</h2>
-          <p>Includes basic usage of our platform. Recommended for new and aspiring photographers.</p>
+          <p>
+            Includes basic usage of our platform. Recommended for new and
+            aspiring photographers.
+          </p>
           <h1>$19.00</h1>
           <h3>per month</h3>
           <button>PICK PLAN</button>
-
         </BasicDiv>
+        <BoxColor></BoxColor>
+        <ProDiv>
+          
+          <ProH1>Pro</ProH1>
+          <ProP>More advanced features available. Recommended for photography veterans and professionals.</ProP>
+          <h1>$39.00</h1>
+          <h3>per month</h3>
+          <button>PICK PLAN</button>
+        </ProDiv>
+        <BusinessDiv>
+          <h1>Business</h1>
+          <p>Additional features available such as more detailed metrics. Recommended for business owners.</p>
+          <h1>$99.00</h1>
+          <h3>per month</h3>
+          <button>PICK PLAN</button>
+        </BusinessDiv>
+        <div>
+          
+        </div>
       </DivTools>
       <Beta />
       <Footer />
@@ -48,20 +68,79 @@ const DivTools = styled.div`
   box-sizing: border-box;
 `;
 
-const SwitchDiv = styled.div`    display: flex;
-align-items: center;
-gap: 32px;`;
+const SwitchDiv = styled.div`
+  display: flex;
+  align-items: center;
+  gap: 32px;
+`;
 
 const BasicDiv = styled.div`
   width: 100%;
-    background: #F5F5F5;
-    margin-top: 40px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    padding-top: 52px;
-    padding-left: 32px;
-    padding-right: 32px;
-    padding-bottom: 40px;
-    box-sizing: border-box;
+  background: #f5f5f5;
+  margin-top: 40px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 52px;
+  padding-left: 32px;
+  padding-right: 32px;
+  padding-bottom: 40px;
+  box-sizing: border-box;
 `;
+
+const ProDiv = styled.div`
+  
+  background: #000;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-left: 32px;
+  padding-right: 32px;
+  padding-bottom: 48px;
+  box-sizing: border-box;
+`;
+
+const BoxColor = styled.div`
+  background: linear-gradient(27deg, #ffc593 0%, #bc7198 51.95%, #5a77ff 100%);
+  width: 100%;
+  height: 6px;
+  margin-top: 24px;
+`;
+
+const ProH1 = styled.h1`
+  color: white;
+  margin-top: 42px;
+  color: #FFF;
+text-align: center;
+font-family: DM Sans;
+font-size: 24px;
+font-style: normal;
+font-weight: 700;
+line-height: 25px;
+`;
+
+const ProP = styled.p`
+  color: white;
+  color: #FFF;
+text-align: center;
+font-family: DM Sans;
+font-size: 15px;
+font-style: normal;
+font-weight: 400;
+line-height: 25px;
+margin-top: 18px;
+opacity: 0.6;
+`;
+
+const BusinessDiv = styled.div`margin-top: 24px;
+display: flex;
+flex-direction: column;
+align-items: center;
+padding-left: 32px;
+padding-right: 32px;
+padding-top: 52px;
+padding-bottom: 40px;
+box-sizing: border-box;
+background: #F5F5F5;`;
+  

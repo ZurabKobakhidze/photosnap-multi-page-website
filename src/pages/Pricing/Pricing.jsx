@@ -1,10 +1,14 @@
 
 import { Compare, PricingDiv } from "components/Pricing";
+import Switch from "components/Pricing/Switch";
 import { Beta, Footer, Header, ToolsComponents } from "components/shared";
 import React, { useState, useEffect } from "react";
 import styled from "styled-components";
 
 function Pricing() {
+
+  const [checked, setChecked] = useState(false);
+
   return (
     <div>
       <Header />
@@ -12,13 +16,10 @@ function Pricing() {
         <PricingDiv />
       </div>
       <DivTools>
-        <SwitchDiv>
-          <h3>Monthly</h3>
-          <label className="switch">
-            <input id="discount-checkbox" type="checkbox" />
-            <span className="slider round"></span>
-          </label>
-          <h3>Yearly</h3>
+      <SwitchDiv>
+          <MonthyH1 checked={checked}>Monthly</MonthyH1>
+          <Switch checked={checked} setChecked={setChecked} />
+          <YearlyH1 checked={checked}>Yearly</YearlyH1>
         </SwitchDiv>
         <BasicDiv>
           <h2>Basic</h2>
@@ -149,4 +150,24 @@ const BusinessDiv = styled.div`
   background: #f5f5f5;
 `;
 
+const MonthyH1 = styled.h1`
+  color: #000;
+  text-align: right;
+  font-family: DM Sans;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 25px;
+  opacity: ${props => props.checked ? 0.5 : 1};
+`;
 
+const YearlyH1 = styled.h1`
+  color: #000;
+  text-align: right;
+  font-family: DM Sans;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 25px;
+  opacity: ${props => props.checked ? 1 : 0.5};
+`;

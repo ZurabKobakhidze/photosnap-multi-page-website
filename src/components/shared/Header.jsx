@@ -2,6 +2,7 @@ import { HamburgeMenu, LogoImage , Close} from "assets/index";
 import React, { useState } from "react";
 import styled from "styled-components";
 import Menu from "./Menu";
+import { Link } from "react-router-dom";
 
 function Header() {
   const [isMenuOpen, setMenuOpen] = useState(false);
@@ -12,9 +13,10 @@ function Header() {
 
   return (
     <HeaderContainer>
-      
       <Main>
-        <img src={LogoImage} alt="" />
+        <Link to="/">
+          <img src={LogoImage} alt="" />
+        </Link>
         <img src={isMenuOpen ? Close : HamburgeMenu} alt="" onClick={handleMenuClick} />
       </Main>
       {isMenuOpen && <Menu />}

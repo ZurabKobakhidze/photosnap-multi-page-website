@@ -148,7 +148,10 @@ function StoryComponents({ storyIDs, hideDate }) {
             <H1text>{story.title}</H1text>
             <H2text>{story.author}</H2text>
             <DivBox></DivBox>
-            <GetButton />
+            <ArrowDiv>
+          <InviteH3>READ STORY</InviteH3>
+        < GetButton />
+        </ArrowDiv>
           </StoryContainer>
         ))}
     </>
@@ -227,4 +230,22 @@ const DateH3 = styled.h3`
   line-height: normal;
   
   z-index: 1;
+`;
+
+const InviteH3 = styled.h3`
+color: #FFF;
+font-family: DM Sans;
+font-size: 12px;
+font-style: normal;
+font-weight: 700;
+line-height: normal;
+letter-spacing: 2px;
+z-index: 1;
+`;
+
+const ArrowDiv = styled.div`
+   display: flex;
+   
+    align-items: center;
+    justify-content: space-between;
 `;

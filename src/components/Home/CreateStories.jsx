@@ -14,7 +14,10 @@ function CreateStories() {
           Photosnap is a platform for photographers and visual storytellers. We
           make it easy to share photos, tell stories and connect with others.
         </TextH3>
-        < GetButton />
+        <ArrowDiv>
+          <InviteH3>GET AN INVITE</InviteH3>
+          <GetButton />
+        </ArrowDiv>
       </Container>
     </DivMain>
   );
@@ -63,4 +66,20 @@ const TextH3 = styled.h3`
   opacity: 0.6;
   margin-top: 16px;
   padding-bottom: 23px;
+`;
+
+const InviteH3 = styled.h3`
+  color: #fff;
+  font-family: DM Sans;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  letter-spacing: 2px;
+`;
+
+const ArrowDiv = styled.div`
+  display: flex;
+  align-items: center;
+  gap: 18px;
 `;

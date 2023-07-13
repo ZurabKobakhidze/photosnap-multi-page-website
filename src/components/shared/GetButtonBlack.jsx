@@ -7,7 +7,6 @@ const GetButton = () => {
   return (
     
       <InviteDiv>
-        <GetinviteH3>GET AN INVITE</GetinviteH3>
         <img src={Arrow} alt="" />
       </InviteDiv>
     

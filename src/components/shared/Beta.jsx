@@ -6,9 +6,12 @@ import { BetaMobile } from "assets/index";
 const Beta = () => {
   return (
     <InviteDiv>
-       <BoxColor></BoxColor>
+      <BoxColor></BoxColor>
       <GetinviteH3>We’re in beta. Get your invite today!</GetinviteH3>
-      <GetButton />
+      <ArrowDiv>
+        <InviteH3>GET AN INVITE</InviteH3>
+        <GetButton />
+      </ArrowDiv>
     </InviteDiv>
   );
 };
@@ -18,7 +21,7 @@ export default Beta;
 const InviteDiv = styled.div`
   display: flex;
   flex-direction: column;
- 
+
   position: relative;
   z-index: 1;
   background-image: url(${BetaMobile});
@@ -45,4 +48,20 @@ const BoxColor = styled.div`
   background: linear-gradient(27deg, #ffc593 0%, #bc7198 51.95%, #5a77ff 100%);
   width: 128px;
   height: 6px;
+`;
+
+const InviteH3 = styled.h3`
+  color: #fff;
+  font-family: DM Sans;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  letter-spacing: 2px;
+`;
+
+const ArrowDiv = styled.div`
+  display: flex;
+  align-items: center;
+  gap: 18px;
 `;

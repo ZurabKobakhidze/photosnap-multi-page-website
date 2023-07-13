@@ -27,7 +27,10 @@ function Footer() {
         <TextH3>Features</TextH3>
         <TextH3>Pricing</TextH3>
       </TextDiv>
-      <GetButton />
+      <ArrowDiv>
+        <InviteH3>GET AN INVITE</InviteH3>
+        <GetButton />
+      </ArrowDiv>
       <CopyrightText>Copyright 2019. All Rights Reserved</CopyrightText>
     </FooterContainer>
   );
@@ -80,4 +83,20 @@ const CopyrightText = styled.h3`
   line-height: normal;
   opacity: 0.5;
   margin-top: 34px;
+`;
+
+const InviteH3 = styled.h3`
+  color: #fff;
+  font-family: DM Sans;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  letter-spacing: 2px;
+`;
+
+const ArrowDiv = styled.div`
+  display: flex;
+  align-items: center;
+  gap: 18px;
 `;

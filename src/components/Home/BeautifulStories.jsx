@@ -18,7 +18,10 @@ const BeautifulStories = () => {
           Easily add photos, text, embed maps and media from other networks.
           Then share your story with everyone.
         </H2text>
-        <GetButtonBlack />
+        <ArrowDiv>
+          <InviteH3>VIEW THE STORIES</InviteH3>
+          <GetButtonBlack />
+        </ArrowDiv>
       </Container>
     </DivMain>
   );
@@ -62,3 +65,18 @@ const H2text = styled.h2`
   margin-bottom: 23px;
 `;
 
+const InviteH3 = styled.h3`
+  color: #000;
+  font-family: DM Sans;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  letter-spacing: 2px;
+`;
+
+const ArrowDiv = styled.div`
+  display: flex;
+  align-items: center;
+  gap: 26px;
+`;

@@ -20,7 +20,10 @@ function MoonHazi() {
           Kentucky and West Virginia, and while the ridges are not high, the
           terrain is extremely rugged.
         </TextH3>
-        <GetButton />
+        <ArrowDiv>
+          <InviteH3>READ THE STORY</InviteH3>
+          <GetButton />
+        </ArrowDiv>
       </Container>
     </Divmain>
   );
@@ -96,10 +99,24 @@ const DivTextWhite = styled.h3`
 `;
 
 const DivH3 = styled.div`
-      display: flex;
-    flex-direction: row;
-    gap: 9px;
-    margin-top: 16px;
-  
+  display: flex;
+  flex-direction: row;
+  gap: 9px;
+  margin-top: 16px;
 `;
 
+const InviteH3 = styled.h3`
+  color: #fff;
+  font-family: DM Sans;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  letter-spacing: 2px;
+`;
+
+const ArrowDiv = styled.div`
+  display: flex;
+  align-items: center;
+  gap: 18px;
+`;

@@ -1,4 +1,3 @@
-
 import { DesignedPhoto } from "assets/index";
 import { GetButton, GetButtonBlack } from "components/shared";
 import React from "react";
@@ -15,7 +14,10 @@ const DesignedFor = () => {
           audience. Our tool is designed for photographers of all levels,
           brands, businesses you name it.
         </H2text>
-        <GetButtonBlack />
+        <ArrowDiv>
+          <InviteH3>VIEW THE STORIES</InviteH3>
+          <GetButtonBlack />
+        </ArrowDiv>
       </Container>
     </DivMain>
   );
@@ -59,3 +61,18 @@ const H2text = styled.h2`
   margin-bottom: 23px;
 `;
 
+const InviteH3 = styled.h3`
+  color: #000;
+  font-family: DM Sans;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  letter-spacing: 2px;
+`;
+
+const ArrowDiv = styled.div`
+  display: flex;
+  align-items: center;
+  gap: 26px;
+`;

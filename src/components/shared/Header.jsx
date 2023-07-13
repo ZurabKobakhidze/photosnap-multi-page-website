@@ -62,6 +62,11 @@ const Main = styled.div`
     padding-left: 40px;
     padding-right: 40px;
   }
+
+  @media (min-width: 1440px) {
+    padding-left: 165px;
+    padding-right: 165px;
+  }
 `;
 
 const Overlay = styled.div`
@@ -85,6 +90,10 @@ const MenuItems = styled.div`
     justify-content: center;
     gap: 57px;
   }
+
+  @media (min-width: 1440px) {
+    gap: 256px;
+  }
 `;
 
 const StyledLink = styled(Link)`
@@ -96,6 +105,15 @@ const StyledLink = styled(Link)`
   line-height: normal;
   letter-spacing: 2px;
   text-decoration: none;
+
+  @media (min-width: 1440px) {
+    &:hover {
+      
+      cursor: pointer;
+      transition: ease-in-out 0.3s;
+      opacity: 0.3;
+    }
+  }
 `;
 
 const Button = styled.button`
@@ -111,14 +129,20 @@ const Button = styled.button`
     font-weight: 700;
     line-height: normal;
     letter-spacing: 2px;
+
+    &:hover {
+      background: #dfdfdf;
+      cursor: pointer;
+      transition: ease-in-out 0.3s;
+      color: black;
+    }
   }
 `;
 
 const PagesDiv = styled.div`
-      display: flex;
-    flex-direction: row;
-    gap: 37px;
-
+  display: flex;
+  flex-direction: row;
+  gap: 37px;
 `;
 
 const HamburgerImg = styled.img`

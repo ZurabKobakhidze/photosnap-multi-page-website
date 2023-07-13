@@ -3,13 +3,13 @@ import styled from "styled-components";
 
 const StyledSvg = styled.svg`
   path {
-    fill: white !important;
+    fill: ${props => props.fillColor};
   }
 `;
 
-const Pinterest = () => {
+const Pinterest = ({ fillColor = 'white' }) => {
   return (
-    <StyledSvg xmlns="http://www.w3.org/2000/svg" width="20" height="20">
+    <StyledSvg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fillColor={fillColor}>
       <defs>
         <linearGradient id="a" x1="100%" x2="0%" y1="0%" y2="100%">
           <stop offset="0%" stopColor="#F6C683" />

@@ -32,6 +32,8 @@ export { default as HeroMobile} from "./features/mobile/hero.jpg";
 export { default as BetaMobile} from "./shared/mobile/bg-beta.jpg";
 export { default as PricingHeroMobile} from "./pricing/mobile/hero.jpg";
 export { default as CheckIcon} from "./shared/desktop/check.svg";
+export { default as CreateTablet} from "./home/tablet/create-and-share.jpg";
+export { default as CreateDesktop} from "./home/desktop/create-and-share.jpg";
 
 
 

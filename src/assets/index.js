@@ -34,8 +34,10 @@ export { default as PricingHeroMobile} from "./pricing/mobile/hero.jpg";
 export { default as CheckIcon} from "./shared/desktop/check.svg";
 export { default as CreateTablet} from "./home/tablet/create-and-share.jpg";
 export { default as CreateDesktop} from "./home/desktop/create-and-share.jpg";
-
-
+export { default as DesignedTablet} from "./home/tablet/designed-for-everyone.jpg";
+export { default as DesignedDesktop} from "./home/desktop/designed-for-everyone.jpg";
+export { default as BeautifulTablet} from "./home/tablet/beautiful-stories.jpg";
+export { default as BeautifulDesktop} from "./home/desktop/beautiful-stories.jpg";
 
 
 

@@ -116,6 +116,7 @@ const TextH3 = styled.h3`
   opacity: 0.6;
   margin-top: 16px;
   padding-bottom: 23px;
+  width: 100%;
   @media (min-width: 768px) {
     color: #fff;
     font-family: DM Sans;

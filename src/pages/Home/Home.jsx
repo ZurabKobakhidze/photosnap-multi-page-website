@@ -39,6 +39,12 @@ const DivTools = styled.div`
   padding-right: 32px;
   padding-bottom: 80px;
   box-sizing: border-box;
+  @media (min-width: 1440px) {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 30px;
+  }
 `;
 
 const GridCOntainer = styled.div`

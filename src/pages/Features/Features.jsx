@@ -11,7 +11,7 @@ function Features() {
         <FeatersDiv />
       </div>
       <DivTools>
-        <ToolsComponents toolIDs={[1, 2, 3, 4, 5]} />
+        <ToolsComponents toolIDs={[1, 2, 3, 4, 5, 6]} />
       </DivTools>
       <Beta />
       <Footer />
@@ -30,4 +30,13 @@ const DivTools = styled.div`
   padding-right: 32px;
   padding-bottom: 80px;
   box-sizing: border-box;
+  @media (min-width: 768px) {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    padding-left: 38px;
+  padding-right: 38px;
+  gap: 11px;
+  justify-items: center;
+  }
+
 `;

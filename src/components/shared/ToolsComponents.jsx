@@ -55,7 +55,10 @@ function ToolsComponents({ toolIDs }) {
         .filter((tool) => toolIDs.includes(tool.id))
         .map((tool) => (
           <DivBox key={tool.id}>
-            <img src={tool.icon} alt="" />
+            <ImageSize>
+              <img src={tool.icon} alt="" />
+            </ImageSize>
+
             <H2Text>{tool.title}</H2Text>
             <PText>{tool.text}</PText>
           </DivBox>
@@ -71,6 +74,13 @@ const DivBox = styled.div`
   flex-direction: column;
   align-items: center;
   padding-top: 56px;
+  width: 100%;
+  @media (min-width: 768px) {
+    width: 339px;
+  }
+  @media (min-width: 1440px) {
+    width: 350px;
+  }
 `;
 
 const H2Text = styled.h2`
@@ -82,6 +92,7 @@ const H2Text = styled.h2`
   font-weight: 700;
   line-height: 25px;
   margin-top: 48px;
+ 
 `;
 
 const PText = styled.p`
@@ -94,4 +105,13 @@ const PText = styled.p`
   line-height: 25px;
   margin-top: 16px;
   opacity: 0.6;
+  height: 72px;
+`;
+
+const ImageSize = styled.div`
+  height: 72px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 `;

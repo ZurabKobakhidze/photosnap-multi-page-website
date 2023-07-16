@@ -101,7 +101,22 @@ const TextDiv = styled.div`
     flex-direction: row;
     gap: 26px;
     padding-bottom: 0;
+    position: relative;
+    left: 0;
   }
+
+  @media (min-width: 1440px) {
+    position: absolute;
+    left: 279px;
+    display: flex;
+    flex-direction: column;
+    gap: 19px;
+    padding-bottom: 0px;
+    align-items: flex-start;
+}
+
+    
+ 
 `;
 
 const CopyrightText = styled.h3`
@@ -212,5 +227,10 @@ const MiniContainer = styled.div`
     align-items: flex-start;
     margin-top: 32px;
     gap: 72px;
+  }
+
+  @media (min-width: 1440px) {
+    margin-top: 85px;
+    position: relative;
   }
 `;

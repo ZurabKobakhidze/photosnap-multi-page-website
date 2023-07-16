@@ -7,21 +7,35 @@ export { default as DesignedPhoto} from "./home/mobile/designed-for-everyone.jpg
 export { default as ResponsiveSvg} from "./shared/desktop/responsive.svg";
 export { default as MountainMobile} from "./stories/mobile/mountains.jpg";
 export { default as EighteenDaysVoyage } from "./stories/mobile/18-days-voyage.jpg";
+export { default as EighteenDaysVoyageDesktop } from "./stories/desktop/18-days-voyage.jpg";
 export { default as Architecturals } from "./stories/mobile/architecturals.jpg";
+export { default as ArchitecturalsDesktop } from "./stories/desktop/architecturals.jpg";
 export { default as BehindTheWaves } from "./stories/mobile/behind-the-waves.jpg";
+export { default as BehindTheWavesDesktop } from "./stories/desktop/behind-the-waves.jpg";
 export { default as CalmWaters } from "./stories/mobile/calm-waters.jpg";
+export { default as CalmWatersDesktop } from "./stories/desktop/calm-waters.jpg";
 export { default as CityScapes } from "./stories/mobile/cityscapes.jpg";
 export { default as DarkForest } from "./stories/mobile/dark-forest.jpg";
+export { default as DarkForestDesktop } from "./stories/desktop/dark-forest.jpg";
 export { default as KingOnAfrica } from "./stories/mobile/king-on-africa.jpg";
+export { default as KingOnAfricaDeskot } from "./stories/desktop/king-on-africa.jpg";
 export { default as LandOfDreams } from "./stories/mobile/land-of-dreams.jpg";
+export { default as LandOfDreamsDesktop } from "./stories/desktop/land-of-dreams.jpg";
 export { default as MilkyWay } from "./stories/mobile/milky-way.jpg";
+export { default as MilkyWayDesktop } from "./stories/desktop/milky-way.jpg";
 export { default as MoonOfAppalacia } from "./stories/mobile/moon-of-appalacia.jpg";
 export { default as RageOfTheSea } from "./stories/mobile/rage-of-the-sea.jpg";
+export { default as RageOfTheSeaDesktop } from "./stories/desktop/rage-of-the-sea.jpg";
 export { default as RunningFree } from "./stories/mobile/running-free.jpg";
+export { default as RunningFreeDesktop } from "./stories/desktop/running-free.jpg";
 export { default as Somwarpet } from "./stories/mobile/somwarpet.jpg";
+export { default as SomwarpetDestop } from "./stories/desktop/somwarpet.jpg";
 export { default as TripToNowhere } from "./stories/mobile/trip-to-nowhere.jpg";
+export { default as TripToNowhereDesktop } from "./stories/desktop/trip-to-nowhere.jpg";
 export { default as UnforeseenCorners } from "./stories/mobile/unforeseen-corners.jpg";
+export { default as UnforeseenCornersDesktop } from "./stories/desktop/unforeseen-corners.jpg";
 export { default as WorldTour } from "./stories/mobile/world-tour.jpg";
+export { default as WorldTourDesktop } from "./stories/desktop/world-tour.jpg";
 export { default as BoostExposure } from "./shared/desktop/boost-exposure.svg";
 export { default as CustomDomain } from "./shared/desktop/custom-domain.svg";
 export { default as Embed } from "./shared/desktop/embed.svg";
@@ -38,6 +52,11 @@ export { default as DesignedTablet} from "./home/tablet/designed-for-everyone.jp
 export { default as DesignedDesktop} from "./home/desktop/designed-for-everyone.jpg";
 export { default as BeautifulTablet} from "./home/tablet/beautiful-stories.jpg";
 export { default as BeautifulDesktop} from "./home/desktop/beautiful-stories.jpg";
+export { default as MoonTablet } from "./stories/tablet/moon-of-appalacia.jpg";
+export { default as MoonDesktop } from "./stories/desktop/moon-of-appalacia.jpg";
+export { default as MountainDesktop} from "./stories/desktop/mountains.jpg";
+export { default as CityScapesDesktop } from "./stories/desktop/cityscapes.jpg";
+
 
 
 

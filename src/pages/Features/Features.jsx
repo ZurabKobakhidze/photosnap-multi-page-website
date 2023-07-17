@@ -38,5 +38,11 @@ const DivTools = styled.div`
   gap: 11px;
   justify-items: center;
   }
+  @media (min-width: 1440px) {
+    grid-template-columns:  1fr 1fr 1fr;
+    padding-left: 165px;
+  padding-right: 165px;
+  
+  }
 
 `;

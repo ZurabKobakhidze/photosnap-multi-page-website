@@ -173,22 +173,32 @@ function StoryComponents({ storyIDs, hideDate }) {
       {stories
         .filter((story) => storyIDs.includes(story.id))
         .map((story) => (
-          <StoryContainer
-            key={story.id}
-            bgImage={story.bgImage}
-            bgImageDesktop={story.bgImageDesktop}
-          >
-            {!hideDate && <DateH3>{story.date}</DateH3>}
-            <H1text>{story.title}</H1text>
-            <H2text>{story.author}</H2text>
-            <DivBox></DivBox>
-            <ArrowDiv>
-              <InviteH3>READ STORY</InviteH3>
-              <GetButton />
-            </ArrowDiv>
-          </StoryContainer>
+          <Story story={story} hideDate={hideDate} key={story.id} />
         ))}
     </>
+  );
+}
+
+function Story({ story, hideDate }) {
+  const [isHovered, setIsHovered] = useState(false);
+
+  return (
+    <StoryContainer
+      bgImage={story.bgImage}
+      bgImageDesktop={story.bgImageDesktop}
+      onMouseEnter={() => setIsHovered(true)}
+      onMouseLeave={() => setIsHovered(false)}
+    >
+      {!hideDate && <DateH3>{story.date}</DateH3>}
+      <H1text>{story.title}</H1text>
+      <H2text>{story.author}</H2text>
+      <DivBox></DivBox>
+      <ArrowDiv>
+        <InviteH3>READ STORY</InviteH3>
+        <GetButton />
+      </ArrowDiv>
+      {isHovered && <BoxColor />}
+    </StoryContainer>
   );
 }
 
@@ -208,6 +218,12 @@ const StoryContainer = styled.div`
   background: no-repeat;
   background-image: url(${(props) => props.bgImage});
   background-size: cover;
+
+  :hover {
+    margin-top: -24px;
+    transition: ease 0.4s;
+    cursor: pointer;
+  }
 
   &:before {
     content: "";
@@ -289,4 +305,13 @@ const ArrowDiv = styled.div`
 
   align-items: center;
   justify-content: space-between;
+`;
+
+const BoxColor = styled.div`
+  background: linear-gradient(27deg, #ffc593 0%, #bc7198 51.95%, #5a77ff 100%);
+  height: 6px;
+  width: 100%;
+  position: absolute;
+  bottom: 0;
+  left: 0;
 `;

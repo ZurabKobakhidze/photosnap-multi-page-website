@@ -44,13 +44,13 @@ function Pricing() {
               </BasicP>
               <MobilePrice>
                 <BasicPrice>${basicPrice.toFixed(2)}</BasicPrice>
-                <BasicMonthly>per month</BasicMonthly>
+                <BasicMonthly>{checked ? "per year" : "per month"}</BasicMonthly>
               </MobilePrice>
               <BasicButton>PICK PLAN</BasicButton>
             </MiniContainer>
             <TabletPrice>
               <BasicPrice>${basicPrice.toFixed(2)}</BasicPrice>
-              <BasicMonthly>per month</BasicMonthly>
+              <BasicMonthly>{checked ? "per year" : "per month"}</BasicMonthly>
             </TabletPrice>
           </BasicDiv>
           <BlackDiv>
@@ -64,13 +64,13 @@ function Pricing() {
                 </ProP>
                 <MobilePrice>
                   <ProPrice>${proPrice.toFixed(2)}</ProPrice>
-                  <ProMonthly>per month</ProMonthly>
+                  <ProMonthly>{checked ? "per year" : "per month"}</ProMonthly>
                 </MobilePrice>
                 <ProButton>PICK PLAN</ProButton>
               </MiniContainer>
               <TabletPrice>
                 <ProPrice>${proPrice.toFixed(2)}</ProPrice>
-                <ProMonthly>per month</ProMonthly>
+                <ProMonthly>{checked ? "per year" : "per month"}</ProMonthly>
               </TabletPrice>
             </ProDiv>
           </BlackDiv>
@@ -84,13 +84,13 @@ function Pricing() {
               </BasicP>
               <MobilePrice>
                 <BasicPrice>${businessPrice.toFixed(2)}</BasicPrice>
-                <BasicMonthly>per month</BasicMonthly>
+                <BasicMonthly>{checked ? "per year" : "per month"}</BasicMonthly>
               </MobilePrice>
               <BasicButton>PICK PLAN</BasicButton>
             </MiniContainer>
             <TabletPrice>
               <BasicPrice>${businessPrice.toFixed(2)}</BasicPrice>
-              <BasicMonthly>per month</BasicMonthly>
+              <BasicMonthly>{checked ? "per year" : "per month"}</BasicMonthly>
             </TabletPrice>
           </BusinessDiv>
         </Container>

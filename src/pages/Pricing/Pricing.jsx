@@ -234,6 +234,13 @@ const BasicButton = styled.button`
   @media (min-width: 1440px) {
     margin-top: 40px;
   }
+
+  :hover {
+    background: #dfdfdf;
+    color: black;
+    cursor: pointer;
+    transition: ease-in-out 0.3s;
+  }
 `;
 
 const ProDiv = styled.div`
@@ -359,6 +366,13 @@ const ProButton = styled.button`
   }
   @media (min-width: 1440px) {
     margin-top: 40px;
+  }
+  
+  :hover {
+    background: #dfdfdf;
+    color: black;
+    cursor: pointer;
+    transition: ease-in-out 0.3s;
   }
 `;
 

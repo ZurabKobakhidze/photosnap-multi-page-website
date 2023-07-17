@@ -97,6 +97,11 @@ const InviteH3 = styled.h3`
   font-weight: 700;
   line-height: normal;
   letter-spacing: 2px;
+  :hover{
+    text-decoration-line: underline;
+    cursor: pointer;
+    transition: ease 0.3s;
+  }
 `;
 
 const ArrowDiv = styled.div`

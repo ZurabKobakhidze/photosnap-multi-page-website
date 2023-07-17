@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from "react";
+import { Link as RouterLink } from "react-router-dom";
 import styled from "styled-components";
 import {
   Facebook,
@@ -29,14 +30,24 @@ function Footer() {
             <Twitter />
             <Pinterest />
           </IconDiv>
-          <CopyrightTextTablet>Copyright 2019. All Rights Reserved</CopyrightTextTablet>
+          <CopyrightTextTablet>
+            Copyright 2019. All Rights Reserved
+          </CopyrightTextTablet>
         </TabletIconsDiv>
 
         <TextDiv>
-          <TextH3>Home</TextH3>
-          <TextH3>Stories</TextH3>
-          <TextH3>Features</TextH3>
-          <TextH3>Pricing</TextH3>
+          <Link to="/">
+            <TextH3>Home</TextH3>
+          </Link>
+          <Link to="/Stories">
+            <TextH3>Stories</TextH3>
+          </Link>
+          <Link to="/Features">
+            <TextH3>Features</TextH3>
+          </Link>
+          <Link to="/Pricing">
+            <TextH3>Pricing</TextH3>
+          </Link>
         </TextDiv>
       </MiniContainer>
 
@@ -66,10 +77,9 @@ const FooterContainer = styled.div`
     padding-left: 40px;
     padding-right: 40px;
   }
-  @media (min-width: 1440px){
+  @media (min-width: 1440px) {
     padding-left: 165px;
     padding-right: 165px;
-
   }
 `;
 
@@ -93,11 +103,11 @@ const TextH3 = styled.div`
   line-height: normal;
   letter-spacing: 2px;
   text-transform: uppercase;
+  text-decoration: none;
 
-  :hover{
+  :hover {
     opacity: 0.3;
     cursor: pointer;
-    
   }
 `;
 
@@ -124,10 +134,7 @@ const TextDiv = styled.div`
     gap: 19px;
     padding-bottom: 0px;
     align-items: flex-start;
-}
-
-    
- 
+  }
 `;
 
 const CopyrightText = styled.h3`
@@ -151,31 +158,31 @@ const CopyrightTextTablet = styled.h3`
   @media (min-width: 768px) {
     display: block;
     color: #fff;
-  text-align: center;
-  font-size: 15px;
-  font-family: DM Sans;
-  font-style: normal;
-  font-weight: 400;
-  line-height: normal;
-  opacity: 0.5;
+    text-align: center;
+    font-size: 15px;
+    font-family: DM Sans;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    opacity: 0.5;
   }
 `;
 
 const TabletIconsDiv = styled.div`
   display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    width: 100%;
-    justify-content: center;
+  flex-direction: column;
+  align-items: flex-start;
+  width: 100%;
+  justify-content: center;
 
-    @media (min-width: 768px) {
-      display: flex;
+  @media (min-width: 768px) {
+    display: flex;
     flex-direction: row;
     align-items: flex-start;
     width: 100%;
     -webkit-box-pack: center;
     justify-content: space-between;
-    }
+  }
 `;
 
 const InviteH3 = styled.h3`
@@ -187,7 +194,7 @@ const InviteH3 = styled.h3`
   line-height: normal;
   letter-spacing: 2px;
 
-  :hover{
+  :hover {
     text-decoration-line: underline;
     cursor: pointer;
     transition: ease 0.3s;
@@ -250,4 +257,9 @@ const MiniContainer = styled.div`
     margin-top: 85px;
     position: relative;
   }
+`;
+
+const Link = styled(RouterLink)`
+  text-decoration: none;
+  color: inherit;
 `;

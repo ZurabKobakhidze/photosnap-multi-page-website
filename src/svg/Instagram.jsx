@@ -3,7 +3,12 @@ import styled from "styled-components";
 
 const StyledSvg = styled.svg`
   path {
-    fill: ${props => props.fillColor};
+    fill: white;
+  }
+
+  :hover path {
+    fill: url(#a);
+    cursor: pointer;
   }
 `;
 

@@ -3,7 +3,12 @@ import styled from "styled-components";
 
 const StyledSvg = styled.svg`
   path {
-    fill: ${props => props.fillColor};
+    fill: white;
+  }
+
+  :hover path {
+    fill: url(#b);
+    cursor: pointer;
   }
 `;
 
@@ -11,7 +16,7 @@ const Facebook = ({ fillColor = 'white' }) => {
   return (
     <StyledSvg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fillColor={fillColor}>
       <defs>
-        <linearGradient id="a" x1="100%" x2="0%" y1="0%" y2="100%">
+        <linearGradient id="b" x1="100%" x2="0%" y1="0%" y2="100%">
           <stop offset="0%" stopColor="#63AFDB" />
           <stop offset="100%" stopColor="#6028F1" />
         </linearGradient>

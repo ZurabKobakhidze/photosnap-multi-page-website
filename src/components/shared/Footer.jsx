@@ -93,6 +93,12 @@ const TextH3 = styled.div`
   line-height: normal;
   letter-spacing: 2px;
   text-transform: uppercase;
+
+  :hover{
+    opacity: 0.3;
+    cursor: pointer;
+    
+  }
 `;
 
 const TextDiv = styled.div`
@@ -180,6 +186,12 @@ const InviteH3 = styled.h3`
   font-weight: 700;
   line-height: normal;
   letter-spacing: 2px;
+
+  :hover{
+    text-decoration-line: underline;
+    cursor: pointer;
+    transition: ease 0.3s;
+  }
 `;
 
 const ArrowDiv = styled.div`

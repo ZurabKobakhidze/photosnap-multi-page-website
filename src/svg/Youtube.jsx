@@ -2,8 +2,14 @@ import React from "react";
 import styled from "styled-components";
 
 const StyledSvg = styled.svg`
-  path {
-    fill: ${props => props.fillColor};
+ path {
+    fill: white;
+  }
+
+  :hover path {
+    fill: url(#e);
+    cursor: pointer;
+    
   }
 `;
 
@@ -11,7 +17,7 @@ const Youtube = ({ fillColor = 'white' }) => {
   return (
     <StyledSvg xmlns="http://www.w3.org/2000/svg" width="21" height="20" fillColor={fillColor}>
       <defs>
-        <linearGradient id="a" x1="0%" x2="100%" y1="100%" y2="0%">
+        <linearGradient id="e" x1="0%" x2="100%" y1="100%" y2="0%">
           <stop offset="0%" stopColor="#D3205A" />
           <stop offset="100%" stopColor="#FF5A5A" />
         </linearGradient>

@@ -303,7 +303,7 @@ const ProH1 = styled.h1`
   @media (min-width: 768px) {
     margin-top: 0;
   }
-  @media (min-width: 768px) {
+  @media (min-width: 1440px) {
     margin-top: 42px;
   }
 `;

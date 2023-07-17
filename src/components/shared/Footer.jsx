@@ -66,6 +66,11 @@ const FooterContainer = styled.div`
     padding-left: 40px;
     padding-right: 40px;
   }
+  @media (min-width: 1440px){
+    padding-left: 165px;
+    padding-right: 165px;
+
+  }
 `;
 
 const IconDiv = styled.div`

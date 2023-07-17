@@ -5,11 +5,20 @@ import styled from "styled-components";
 function Compare() {
   return (
     <ComapreDiv>
-      <div className="features">
-        <FeaturesH1>THE FEATURES</FeaturesH1>
+      <CompareH1>COMPARE</CompareH1>
+      <FeatureDiv>
+        <FeaturesMini>
+          <FeaturesH1>THE FEATURES</FeaturesH1>
+          <TabletCheck>
+            <CheckTypeTablet>BASIC</CheckTypeTablet>
+            <CheckTypeTablet>PRO</CheckTypeTablet>
+            <CheckTypeTablet>BUSINESS</CheckTypeTablet>
+          </TabletCheck>
+        </FeaturesMini>
+
         <BlackLine></BlackLine>
         <div>
-          <div className="storyPostingDiv">
+          <StoryDiv>
             <FeaturesH1>UNLIMITED STORY POSTING</FeaturesH1>
             <CheckDiv>
               <ChechTypeGap>
@@ -25,11 +34,11 @@ function Compare() {
                 <img src={CheckIcon} alt="" />
               </ChechTypeGap>
             </CheckDiv>
-          </div>
+          </StoryDiv>
           <GrayLine></GrayLine>
         </div>
         <div>
-          <div className="storyPostingDiv">
+          <StoryDiv>
             <FeaturesH1>UNLIMITED PHOTO UPLOAD</FeaturesH1>
             <CheckDiv>
               <ChechTypeGap>
@@ -45,11 +54,11 @@ function Compare() {
                 <img src={CheckIcon} alt="" />
               </ChechTypeGap>
             </CheckDiv>
-          </div>
+          </StoryDiv>
           <GrayLine></GrayLine>
         </div>
         <div>
-          <div className="storyPostingDiv">
+          <StoryDiv>
             <FeaturesH1>EMBEDDING CUSTOM CONTENT</FeaturesH1>
             <CheckDiv>
               <ChechTypeGap>
@@ -64,11 +73,11 @@ function Compare() {
                 <img src={CheckIcon} alt="" />
               </ChechTypeGap>
             </CheckDiv>
-          </div>
+          </StoryDiv>
           <GrayLine></GrayLine>
         </div>
         <div>
-          <div className="storyPostingDiv">
+          <StoryDiv>
             <FeaturesH1>CUSTOMIZE METADATA</FeaturesH1>
             <CheckDiv>
               <ChechTypeGap>
@@ -83,11 +92,11 @@ function Compare() {
                 <img src={CheckIcon} alt="" />
               </ChechTypeGap>
             </CheckDiv>
-          </div>
+          </StoryDiv>
           <GrayLine></GrayLine>
         </div>
         <div>
-          <div className="storyPostingDiv">
+          <StoryDiv>
             <FeaturesH1>ADVANCED METRICS</FeaturesH1>
             <CheckDiv>
               <ChechTypeGap>
@@ -101,11 +110,11 @@ function Compare() {
                 <img src={CheckIcon} alt="" />
               </ChechTypeGap>
             </CheckDiv>
-          </div>
+          </StoryDiv>
           <GrayLine></GrayLine>
         </div>
         <div>
-          <div className="storyPostingDiv">
+          <StoryDiv>
             <FeaturesH1>PHOTO DOWNLOADS</FeaturesH1>
             <CheckDiv>
               <ChechTypeGap>
@@ -119,11 +128,11 @@ function Compare() {
                 <img src={CheckIcon} alt="" />
               </ChechTypeGap>
             </CheckDiv>
-          </div>
+          </StoryDiv>
           <GrayLine></GrayLine>
         </div>
         <div>
-          <div className="storyPostingDiv">
+          <StoryDiv>
             <FeaturesH1>SEARCH ENGINE INDEXING</FeaturesH1>
             <CheckDiv>
               <ChechTypeGap>
@@ -137,11 +146,11 @@ function Compare() {
                 <img src={CheckIcon} alt="" />
               </ChechTypeGap>
             </CheckDiv>
-          </div>
+          </StoryDiv>
           <GrayLine></GrayLine>
         </div>
         <div>
-          <div className="storyPostingDiv">
+          <StoryDiv>
             <FeaturesH1>CUSTOM ANALYTICS</FeaturesH1>
             <CheckDiv>
               <ChechTypeGap>
@@ -155,10 +164,10 @@ function Compare() {
                 <img src={CheckIcon} alt="" />
               </ChechTypeGap>
             </CheckDiv>
-          </div>
+          </StoryDiv>
           <GrayLine></GrayLine>
         </div>
-      </div>
+      </FeatureDiv>
     </ComapreDiv>
   );
 }
@@ -170,6 +179,13 @@ const CheckDiv = styled.div`
   flex-direction: row;
   gap: 75px;
   margin-top: 16px;
+ 
+  @media (min-width: 768px) {
+    padding-right: 55px;
+    gap: 125px;
+    margin-top: 0;
+  }
+  
 `;
 
 const BlackLine = styled.div`
@@ -182,6 +198,15 @@ const BlackLine = styled.div`
 
 const ComapreDiv = styled.div`
   margin-top: 64px;
+  width: 318px;
+  display: flex;
+    flex-direction: column;
+    align-items: center;
+
+  @media (min-width: 768px) {
+    margin-top: 112px;
+    width: 100%;
+  }
 `;
 
 const FeaturesH1 = styled.h1`
@@ -203,6 +228,25 @@ const CheckType = styled.h3`
   line-height: normal;
   letter-spacing: 1.667px;
   opacity: 0.5;
+  @media (min-width: 768px) {
+    display: none;
+  }
+`;
+
+const CheckTypeTablet = styled.h3`
+  color: #000;
+  text-align: center;
+  font-family: DM Sans;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  letter-spacing: 2px;
+  display: none;
+  width: 140px;
+  @media (min-width: 768px) {
+    display: block;
+  }
 `;
 
 const ChechTypeGap = styled.div`
@@ -210,6 +254,7 @@ const ChechTypeGap = styled.div`
   display: flex;
   flex-direction: column;
   align-items: flex-start;
+
 `;
 
 const GrayLine = styled.div`
@@ -219,3 +264,54 @@ const GrayLine = styled.div`
   margin-top: 24px;
   margin-bottom: 24px;
 `;
+
+const CompareH1 = styled.h1`
+  color: #000;
+  text-align: center;
+  font-family: DM Sans;
+  font-size: 40px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 48px;
+  letter-spacing: 4.167px;
+  text-transform: uppercase;
+  display: none;
+  @media (min-width: 768px) {
+    display: block;
+  }
+`;
+
+const FeatureDiv = styled.div`
+  margin-top: 0;
+  width: 100%;
+  @media (min-width: 768px) {
+    margin-top: 64px;
+  }
+  @media (min-width: 1440px) {
+    width: 731px;
+  }
+`;
+
+const FeaturesMini = styled.div`
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+`;
+
+const TabletCheck = styled.div`
+  display: flex;
+  flex-direction: row;
+`;
+
+const StoryDiv = styled.div`
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  @media (min-width: 768px) {
+    display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  }
+`;
+
